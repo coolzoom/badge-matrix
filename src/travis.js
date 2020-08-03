@@ -109,6 +109,7 @@ export default class TravisClient {
           job.state === 'failed') {
         status = job.state
       }
+	  status = job.state
       return status
     }, 'unknown')
   }
